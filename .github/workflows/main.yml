@@ -90,9 +90,3 @@ jobs:
           # Ensure tests do not break the workflow by exiting with code 0
           echo "Tests completed without breaking the workflow."
 
-      - name: Upload screenshots
-        uses: actions/upload-artifact@v4
-        with:
-          name: seleniumbase-screenshots
-          path: |
-            ./latest_logs/
