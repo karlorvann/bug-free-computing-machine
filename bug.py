@@ -279,10 +279,6 @@ def main() -> None:
             time.sleep(backoff)
 
         if consecutive_failures >= cfg.max_retries:
-            log.error(
-                "Reached max consecutive failures (%d). Exiting.",
-                cfg.max_retries,
-            )
             sys.exit(1)
 
 
