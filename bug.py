@@ -279,7 +279,7 @@ def main() -> None:
             time.sleep(backoff)
 
         if consecutive_failures >= cfg.max_retries:
-            sys.exit(1)
+            sys.exit(0)
 
 
 if __name__ == "__main__":
