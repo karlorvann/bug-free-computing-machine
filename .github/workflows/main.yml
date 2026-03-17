@@ -1,4 +1,4 @@
-name: pfpfp
+name: DEX
 on:
   schedule:
     - cron: "*/5 * * * *"
@@ -80,7 +80,7 @@ jobs:
 
       - name: Run Python script with Brave
         run: |
-          python bop.py --brave --incognito --do-not-track --xvfb --screenshot 
+          python bug.py --brave --incognito --do-not-track --xvfb --screenshot 
 
       - name: Run tests (non-breaking)
         run: |
